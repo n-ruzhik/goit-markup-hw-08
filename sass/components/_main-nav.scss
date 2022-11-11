@@ -1,0 +1,24 @@
+.header {
+    position: relative;
+    border-bottom: 1px solid #ececec;
+    display: flex;
+}
+
+.main-nav {
+    // display: flex;
+    align-items: center;
+
+    padding-top: 0;
+    padding-bottom: 0;
+}
+
+.header-nav {
+    // display: flex;
+    align-items: center;
+}
+
+.nav-mobile {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
