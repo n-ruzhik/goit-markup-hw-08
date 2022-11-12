@@ -1,6 +1,7 @@
 .product {
     display: block;
     transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    height: 100%;
 
     &:hover,
     &:focus {
@@ -10,8 +11,8 @@
 
     @media screen and (min-width: 768px) {
         display: flex;
-        flex-direction: row;
-        flex-wrap: wrap;
+        flex-direction: column;
+        // flex-wrap: wrap;
         margin-bottom: 0;
     }
     
@@ -58,9 +59,10 @@
 .product__content {
     padding: 20px 24px;
     border: 1px solid #eee;
+    flex-grow: 1;
 
     @media screen and (min-width: 768px) {
-        width: 370px;
+        width: 100%;
     }
     
 }

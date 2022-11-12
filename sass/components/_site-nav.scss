@@ -8,6 +8,17 @@
     &:not(:last-child) {
         margin-right: 50px;
     }
+
+    
+
+    @media screen and (max-width: 767px) {
+        margin-bottom: 32px;
+        
+        &:last-child {
+          margin-bottom: 302px;
+        }  
+    }
+
 }
 
 .current::after {
@@ -21,6 +32,10 @@
     border-radius: 2px;
 
     background-color: var(--accent-color);
+
+    @media screen and (max-width: 767px) {
+        display: none;
+    }
 }
 
 .site-nav {
@@ -34,6 +49,14 @@
     font-size: 14px;
     line-height: 1.1;
     letter-spacing: 0.02em;
+
+    @media screen and (max-width: 767px) {
+        flex-direction: column;
+        align-items: flex-start;
+
+        font-size: 40px;
+        line-height: 1.2;
+    }
 }
 
 .site-nav__link {
@@ -46,5 +69,9 @@
     &:hover,
     &:focus {
          color: var(--accent-color);
+    }
+
+    @media screen and (max-width: 767px) {
+        padding: 0;
     }
 }
