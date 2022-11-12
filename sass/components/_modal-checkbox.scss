@@ -11,7 +11,12 @@
     align-items: center;
     justify-content: center;
 
+    font-size: 12px;
     line-height: 1.7;
+
+    @media  screen and (min-width: 1200px) {
+        font-size: 14px;
+    }
 }
 
 .checkbox__icon-check {

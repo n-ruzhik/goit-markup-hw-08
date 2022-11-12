@@ -23,6 +23,7 @@
     &:last-of-type {
         margin-bottom: 30px;
     }
+
 }
 
 .form__label {
@@ -56,7 +57,12 @@
 
 .form__input-box {
     position: relative;
-    width: 448px;
+    width: 370px;
+
+    @media screen and (min-width: 1200px) {
+            width: 448px;
+    }
+    
 }
 
 .form__input-icon {

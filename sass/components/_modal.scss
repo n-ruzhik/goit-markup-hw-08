@@ -4,7 +4,7 @@
     left: 50%;
 
     height: 581px;
-    width: 528px;
+    width: 450px;
     padding: 40px;
 
     background-color: #fff;
@@ -16,6 +16,10 @@
     transform: translate(-50%, -50%) scale(1);
 
     transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+    @media screen and (min-width: 1200px) {
+        width: 528px;
+    }
 }
 
 .modal__close-btn {
