@@ -1,4 +1,5 @@
 .subscribe {
+    
     @media screen and (min-width: 1200px) {
         margin-left: auto;
     }
@@ -7,17 +8,17 @@
 .subscribe__field {
     display: flex;
     flex-direction: column;
-    flex-wrap: wrap;
     align-items: center;
     justify-content: center;
 
+    
     @media screen and (min-width: 1200px) {
         flex-direction: row;
     }
 }    
 
 .subscribe__input {
-    width: 450px;
+    width: 100%;
     height: 50px;
 
     padding: 15px 16px;
