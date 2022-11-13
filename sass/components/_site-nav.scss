@@ -9,14 +9,12 @@
         margin-right: 50px;
     }
 
-    
-
     @media screen and (max-width: 767px) {
         margin-bottom: 32px;
         
-        &:last-child {
-          margin-bottom: 302px;
-        }  
+        // &:last-child {
+        //   margin-bottom: 302px;
+        // }  
     }
 
 }
