@@ -1,55 +1,37 @@
 .contact-nav {
     @extend .list;
     
-    display: flex;
-    justify-content: baseline;
+    display: flex;   
+    flex-direction: column;
     margin-left: auto;
 
+    font-size: 12px;
+   
+
     @media screen and (max-width: 767px) {
-        flex-direction: column;
-        align-items: flex-start;
-        position: absolute;
-        bottom: 112px;
-    
+        display: none;    
     }
 
-    @media screen and (max-width: 1199px) {
-        flex-direction: column;
-        align-items: flex-start;
-        justify-content: center;
+
+    @media screen and (min-width: 1200px) {
+       flex-direction: row;
+       gap: 30px;
     }
     
+
 }
 
-.contact-nav__item {
-    @media screen and (max-width: 767px) {
-        margin-bottom: 32px;
-    }
-}
-
-.contact-nav__item:not(:last-child) {
-    margin-bottom: 0;
-
-    @media screen and (max-width: 767px) {
-        margin-right: 0px;
-        margin-bottom: 0;
-        order: 2;
-    }
-
-    @media screen and (max-width: 1199px) {
-        margin-right: 0;
+.contact-nav__item:first-of-type {
+    @media  screen and (max-width: 1199px) {
         margin-bottom: 10px;
     }
 
-    @media screen and (min-width: 1200px) {
-        margin-right: 50px;
-    }
 }
 
 .contact-nav__link {
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: flex-start;
 
     color: inherit;
 
@@ -65,14 +47,19 @@
         color: var(--accent-color);
     }
 
-    @media screen and (max-width: 767px) {
-        font-size: 34px;
-        line-height: 1.2;
-
-        &:last-child {
-            font-size: 14px;
-        }
+    @media screen and (max-width: 1199) {
+        text-align: end;
+    
     }
+
+    // @media screen and (max-width: 767px) {
+    //     font-size: 34px;
+    //     line-height: 1.2;
+
+    //     &:last-child {
+    //         font-size: 14px;
+    //     }
+    // }
 }
 
 .contact-nav__icon {
@@ -94,7 +81,7 @@
 
 // Ссылки на соц-сети в навигации мобильной версии
 
-.network {
+.network-mobile {
     position: absolute;
     bottom: 48px;
     display: flex;
@@ -110,7 +97,7 @@
     }
 }
 
-.network__item {
+.network-mobile__item {
     border-right: 1px solid rgba(33, 33, 33, 0.2);
     padding: 0 10px;
 
@@ -123,7 +110,7 @@
     }
 }
 
-.network__link {
+.network-mobile__link {
     color: var(--accent-color);
     
     &:hover,
