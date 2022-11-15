@@ -420,7 +420,7 @@ img {
   display: flex;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-  margin-bottom: 50px;
+  margin-bottom: 25px;
 }
 @media screen and (min-width: 768px) {
   .filter {
@@ -430,13 +430,18 @@ img {
     margin-bottom: 30px;
   }
 }
+@media screen and (min-width: 1200px) {
+  .filter {
+    margin-bottom: 50px;
+  }
+}
 
-.filter__item:not(:last-child) {
+.filter__item {
   margin-bottom: 15px;
   margin-right: 8px;
 }
 @media screen and (min-width: 768px) {
-  .filter__item:not(:last-child) {
+  .filter__item {
     margin-bottom: 0;
   }
 }
@@ -645,6 +650,9 @@ img {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
+    -webkit-box-align: baseline;
+        -ms-flex-align: baseline;
+            align-items: baseline;
   }
 }
 
@@ -796,7 +804,6 @@ img {
 @media screen and (min-width: 1200px) {
   .logo {
     font-size: 26px;
-    margin-right: 82px;
   }
 }
 .logo--inverse {
