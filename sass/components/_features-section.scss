@@ -20,6 +20,9 @@
 
 .features__item {
     margin-bottom: 30px;
+
+    &:last-of-type {
+    margin-bottom: 0px;}
     
     @media screen and (min-width: 768px) {
         width: calc((100% - 30px) / 2);
@@ -45,10 +48,13 @@
     text-transform: uppercase;
     text-align: center;
 
+    font-size: 14px;
+    line-height: 1.2;
+
     color: var(--title-text-color);
 
     @media screen and (min-width: 768px) {
-        text-align: left;;
+        text-align: left;
     }
 }
 
